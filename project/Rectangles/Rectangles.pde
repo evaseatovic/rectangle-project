@@ -28,7 +28,7 @@ void setup()
   topX = appWidth * 1/4;
   topY = appHeight * 1/20;
   topWidth = appWidth * 1/2;
-  topHeight = appHeight * 13/20;
+  topHeight = appHeight * 1/2;
   bottomX = appWidth *1/2;
   bottomY = appHeight * 3/4;
   bottomWidth = appWidth * 1/4;
@@ -37,12 +37,12 @@ void setup()
   //Image Dimensions for Aspect Ratio: image meta data
   //Note: meta explored in MP3's or music files
   //Note: Dimensions are found in the image file / Right Click / Properties / Details
-  int picWidth1 = 800; //Obi image
-  int picHeight1 = 600;
-  int picWidth2 = 860;//Bike image
-  int picHeight2 = 529;
-  int picWidth3 = 325; //Darth image
-  int picHeight3 = 485;
+  int picWidth1 = 2400; //apple
+  int picHeight1 = 1889;
+  int picWidth2 = 481;//banana
+  int picHeight2 = 612;
+  int picWidth3 = 320; //Darth image
+  int picHeight3 = 180;
   //
   //Image Orientation: Landscape, Square, Portrait
   float smallerDimension1, largerDimension1, imageWidthRatio1=0.0, imageHeightRatio1=0.0;
@@ -154,7 +154,6 @@ void mousePressed() {
     nightMode = true;
     rect( backgroundImageX, backgroundImageY, backgroundImageWidth, backgroundImageHeight );
     tint(64, 64, 40, 85); //RGB: Night Mode
-    image( pic1, backgroundImageX, backgroundImageY, picWidthAdjusted1, picHeightAdjusted1);
   }
   if ( mouseButton == RIGHT ) {
     nightMode = false;
